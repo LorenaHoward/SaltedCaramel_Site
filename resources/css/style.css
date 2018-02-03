@@ -1,10 +1,10 @@
 /* Webfont: SaltedCaramel-Regular */@font-face {
     font-family: 'SaltedCaramel';
     src: url('SaltedCaramel-Regular.eot'); /* IE9 Compat Modes */
-    src: url('/Users/Lorena/Proyectos/SaltedCaramelBooks/SaltedCaramel_Site/resources/fonts/saltedcaramel/SaltedCaramel-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
-         url('/Users/Lorena/Proyectos/SaltedCaramelBooks/SaltedCaramel_Site/resources/fonts/saltedcaramel/SaltedCaramel-Regular.woff') format('woff'), /* Modern Browsers */
-         url('/Users/Lorena/Proyectos/SaltedCaramelBooks/SaltedCaramel_Site/resources/fonts/saltedcaramel/SaltedCaramel-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('resources/fonts/saltedcaramel/SaltedCaramel-Regular.svg') format('svg'); /* Legacy iOS */
+    src: url('../resources/fonts/saltedcaramel/SaltedCaramel-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+         url('../resources/fonts/saltedcaramel/SaltedCaramel-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../resources/fonts/saltedcaramel/SaltedCaramel-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../resources/fonts/saltedcaramel/SaltedCaramel-Regular.svg') format('svg'); /* Legacy iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
