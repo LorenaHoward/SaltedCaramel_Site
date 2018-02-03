@@ -12,7 +12,11 @@
 
 body {
 font-family: 'Fira Sans', sans-serif;
+<<<<<<< HEAD
 background-image: url("../resources/images/background_lines.gif");
+=======
+background-image: url('../resources/images/background_yellow.gif');
+>>>>>>> 874bbd620c45ac8f0f3cff85ae13efbcf70211cf
 background-repeat: repeat;
 }
 
