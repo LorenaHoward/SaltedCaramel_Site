@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <meta name="description" content="Salted Caramel books and goods, English-Spanish, shop dual language, books, children’s books, bilingual kids, dual-language immersion, popular culture, Mexico, graphic design.">
 
     <!-- code to link type -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,800,800i" rel="stylesheet">
-    <style type="text/css" media="screen">
-      @font-face { font-family: 'SaltedCaramel-Regular'; src: url('resources/fonts/saltedcaramel/glyphicons-halflings-regular.woff'); }
-      </style>
+
     <!-- code to reset -->
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
     <!-- link to css sheet -->
@@ -30,8 +29,8 @@
       </div>
       <navbar>
         <ul>
-          <li class="active">home</li>
-          <li><a href="#">cataloge</a></li>
+          <li class="current-page">home</li>
+          <li><a href="#">catalog</a></li>
           <li><a href="#">cart</a></li>
         </ul>
       </navbar>
@@ -40,22 +39,22 @@
 
   <!-- start of banner -->
   <div class="banner">
-    <video src="resources/images/home_images/hello_hola.mov" alt="hello viedo" width="1144px" height="286px">Your browser does not support video tag </video>
+    Bienvenidos
   </div> <!-- end of banner -->
 
   <!-- start of teaser-section -->
   <div class="teaser-container">
     <!-- candy frog comet -->
-    <div class="teaser-box">
+    <div class="teaser-box purple-blue">
       <div class="teaser-image">
         <img src="resources/images/home_images/candy.gif">
       </div>
       <div class="teaser-text">
-        <p>A single grid that changes to depending on the story, and a good tool for brushing up on your Spanish.</p>
+        <p>A single grid that changes depending on the story, and a good tool for brushing up on your Spanish.</p>
       </div>
     </div>
     <!--  mexican lettering -->
-    <div class="teaser-box">
+    <div class="teaser-box green">
       <div class="teaser-image">
         <img src="resources/images/home_images/lettering.gif">
       </div>
@@ -64,7 +63,7 @@
       </div>
     </div>
     <!--  cognates -->
-    <div class="teaser-box">
+    <div class="teaser-box cyan">
       <div class="teaser-image">
         <img src="resources/images/home_images/cognates.gif">
       </div>
@@ -73,29 +72,32 @@
       </div>
     </div>
     <!-- puzzle game -->
-    <div class="teaser-box">
+    <div class="teaser-box dark-gray">
       <div class="teaser-image">
         <img src="resources/images/home_images/puzzle.gif">
       </div>
-      <div class="teaser-text">
+      <div class="teaser-text ">
         <p>Game board time! Invent abstract compositions and increase your focus span with magnets set.</p>
       </div>
     </div>
   </div> <!-- end of teaser-section -->
 
   <!-- start of about us section -->
-  <div id="about-us">
+
+  <div id="about-us" class="about">
+    <div class="things">
+        <img src="resources/images/home_images/dog.png" alt="dog">
+        <img src="resources/images/home_images/bear.png" alt="bear">
+        <img src="resources/images/home_images/diver.png" alt="diver">
+        <img src="resources/images/home_images/lion.png" alt="lion">
+        <img src="resources/images/home_images/pilot.png" alt="pilot">
+      </div>
+
    <h1>The things that could (once upon a time) happen...</h1>
    <p>Salted Caramel Books is a small publishing house, with the mission of fostering the pleasure of reading and learning among people of all ages. Our small-scale editions allow for a lot of interaction with like-minded artists and professionals, and we indulge in small editions that become production adventures.
 We are involved exploring languages (usually two at the same time), alphabetic characters as forms (often referred to as “letterforms”…), funky lettering, experimental printing and—necessarily!—binding, boxes and other vessels. We like games and puzzles. We get involved in workshops and collaborative projects.</p>
-    <div class="things">
-      <img src="resources/images/home_images/dog.png" alt="dog">
-      <img src="resources/images/home_images/bear.png" alt="bear">
-      <img src="resources/images/home_images/diver.png" alt="diver">
-      <img src="resources/images/home_images/lion.png" alt="lion">
-      <img src="resources/images/home_images/pilot.png" alt="pilot">
-    </div>
-  </div>
+
+  </div><!--end of about us section -->
 
   <footer>
     <ul>
@@ -103,6 +105,12 @@ We are involved exploring languages (usually two at the same time), alphabetic c
       <li><a href="#">contact</a></li>
       <li><a href="#">site map</a></li>
     </ul>
+    <div class="icons">
+      facebook
+    </div>
+    <div class="copyright">
+      <p>© Salted Caramel Books</p>
+    </div>
   </footer>
 
 </div> <!-- end of main container -->
