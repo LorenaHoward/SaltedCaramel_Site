@@ -2,10 +2,23 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="Salted Caramel books and goods, English-Spanish, shop dual language, books, children’s books, bilingual kids, dual-language immersion, popular culture, Mexico, graphic design.">
+    <meta name="description" content="Salted Caramel books—and goods! is a small publishing house specialized in short, very hands-on and experimental editions. We cater to the fun and love for learning. English-Spanish,  dual language, books, children’s books, bilingual kids, dual-language immersion, popular culture, Mexico, graphic design, typography, lettering.">
 
     <!-- code to link type -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,800,800i" rel="stylesheet">
+
+    <!--bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--end of bootstrap link-->
+
+    <!--JS, Popper.js, and JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--end of JS, Popper.js, and JQuery-->
+
 
     <!-- code to reset -->
     <link href="resources/css/reset.css" type="text/css" rel="stylesheet">
@@ -45,7 +58,24 @@
 
   <!-- start of banner -->
   <div class="banner">
-    Bienvenidos
+
+<!--slideshow bootstrap, link: https://v4-alpha.getbootstrap.com/components/carousel/-->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="resources/images/home_images/MTE_spine.jpeg" alt="Modular Type Elements booklet">
+    </div>
+    <div class="carousel-item">
+      hola2
+    </div>
+    <div class="carousel-item">
+      hola 3
+    </div>
+  </div>
+</div>
+<!--end of slideshow-->
+
+
   </div> <!-- end of banner -->
 
   <!-- start of teaser-section -->
@@ -114,36 +144,19 @@
     </ul>
   </nav>
 
-  <!--Sharing icons, I need to make the links work better… the link to this code is https://codepen.io/asheabbott/pen/GoMrzW -->
-  <div id="share">
+    <!--Sharing icons-->
 
-    <!-- facebook -->
-    <a class="facebook" href="https://www.facebook.com/share.php?u={{https://lorenahoward.github.io/SaltedCaramel_Site/index.html}}&title={{Salted Caramel Books}}" target="blank"><i class="fa fa-facebook"></i></a>
+    <!-- AddToAny BEGIN -->
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_google_plus"></a>
+    </div>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+    <!-- AddToAny END -->
 
-    <!-- twitter -->
-    <a class="twitter" href="https://twitter.com/intent/tweet?status={{title}}+{{url}}" target="blank"><i class="fa fa-twitter"></i></a>
-
-    <!-- google plus -->
-    <a class="googleplus" href="https://plus.google.com/share?url={{url}}" target="blank"><i class="fa fa-google-plus"></i></a>
-
-    <!-- linkedin -->
-    <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url={{url}}&title={{title}}&source={{source}}" target="blank"><i class="fa fa-linkedin"></i></a>
-
-    <!-- pinterest -->
-    <a class="pinterest" href="https://pinterest.com/pin/create/bookmarklet/?media={{media}}&url={{url}}&is_video=false&description={{title}}" target="blank"><i class="fa fa-pinterest-p"></i></a>
-
-  </div>
-  <!--end of sharing icons-->
-
-  <!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_twitter"></a>
-<a class="a2a_button_google_plus"></a>
-</div>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
+    <!--end of sharing icons-->
 
     <div class="copyright">
       <p>© Salted Caramel Books</p>
@@ -151,5 +164,7 @@
   </footer>
 
 </div> <!-- end of main container -->
+
+
   </body>
 </html>
