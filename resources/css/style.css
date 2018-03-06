@@ -216,11 +216,6 @@ a:visited {
   column-count: 2;
 }
 
-.collaborators-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .colaborator {
   display: flex;
   flex-direction: row;
