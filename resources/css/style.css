@@ -294,3 +294,18 @@ footer a:active {
 footer a:visited {
   color: white;
 }
+
+@media only screen and (max-width:586px) {
+
+  .teaser-container {
+    flex-direction: column;
+  }
+
+  .teaser-box {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+  }
+
+
+}
