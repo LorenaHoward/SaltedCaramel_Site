@@ -212,8 +212,12 @@ a:visited {
   margin: 0 auto;
 }
 
-.two-columns {
+p .two-columns {
   column-count: 2;
+}
+
+p .single-column {
+  display: none;
 }
 
 .colaborator {
@@ -295,7 +299,9 @@ footer a:visited {
   color: white;
 }
 
-@media only screen and (max-width:586px) {
+@media only screen
+and (min-width: 300px)
+and (max-width: 586px) {
 
   .teaser-container {
     flex-direction: column;
@@ -307,5 +313,15 @@ footer a:visited {
     min-width: 100%;
   }
 
+  p .two-columns {
+    display: none;
+  }
 
+  p .single-column {
+
+  }
+
+  .about {
+    margin: 0 5px;
+  }
 }
