@@ -120,6 +120,10 @@ a:visited {
   /*this compensates for moving banner 4.56rem down to give air to header*/
 }
 
+.banner-mini {
+  display: none;
+}
+
 .banner img{
   max-width: 100%;
   height: auto;
@@ -192,7 +196,8 @@ a:visited {
 }
 
 .gradient-background {
-  max-width: 1144px;
+  position: relative;
+  width: 100%;
   margin: 0 auto;
   background: linear-gradient(#ffff01, white);
   padding: 50px 0;
@@ -236,7 +241,7 @@ a:visited {
 
 .pictographs {
   display: flex;
-  max-width: 1144px;
+  width: 1144px;
   margin: 0 auto;
   justify-content: space-between;
   height: 12rem;
@@ -271,6 +276,8 @@ footer nav {
 
 .a2a_default_style a {
   background-color: black;
+  width: 25%;
+  height: auto;
 }
 
 footer .copyright {
@@ -309,10 +316,12 @@ and (max-width: 586px) {
 
   .maincontainer {
     max-width: 586px;
+    overflow: hidden;
   }
 
   header {
     max-width: 586px;
+    height: 4.56rem;
   }
 
   .logo_container {
@@ -324,13 +333,11 @@ and (max-width: 586px) {
   }
 
   .logo_blink_container img {
-    padding-top: 2px;
     width: 4rem;
-    height: auto;
-    overflow: hide;
-    margin-right: .5rem;
     position: relative;
-    top: .5rem;
+    top: .7rem;
+    left: .28rem;
+    margin-right: .5rem;
   }
 
   nav {
@@ -348,6 +355,25 @@ and (max-width: 586px) {
     display: block;
     background-color: black;
     height: 1.85rem;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .banner-mini {
+    display: flex;
+    position: relative;
+    max-width: 586px;
+    height: auto;
+    font-family: "SaltedCaramel";
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(white, #ffff01);
+    line-height: 38px;
+    top: 4.8rem;
+    margin-bottom: 4.8rem;
+    /*this compensates for moving banner 4.56rem down to give air to header*/
   }
 
   .teaser-container {
@@ -388,16 +414,26 @@ and (max-width: 586px) {
   }
 
   .pictographs img {
-    opacity: 0.8;
-    width: 20%;
-    height: auto;
-    padding: 3.6rem 1rem;
-    margin-bottom: 2rem;
+    display: none;
+  }
+
+  footer {
+    max-width: 586px;
+    height: 5rem;
   }
 
 .a2a_default_style a {
     width: 20%;
     height: auto;
   }
+
+ }
+.a2a_kit_size_32 {
+  width: 30%;
+}
+
+.a2a_default_style {
+  width: 10%;
+}
 
 }
