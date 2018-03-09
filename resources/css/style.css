@@ -365,12 +365,17 @@ and (max-width: 586px) {
     display: flex;
     margin: 0 auto;
     position: relative;
-    max-width: 586px;
-    height: auto;
+    min-width: 100%;
     background: linear-gradient(white, #ffff01);
     top: 4.8rem;
     margin-bottom: 4.8rem;
     /*this compensates for moving banner 4.56rem down to give air to header*/
+  }
+
+  .carousel {
+    margin: 0 auto;
+    position: relative;
+    top: 4px;
   }
 
   .teaser-container {
