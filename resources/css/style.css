@@ -363,14 +363,11 @@ and (max-width: 586px) {
 
   .banner-mini {
     display: flex;
+    margin: 0 auto;
     position: relative;
     max-width: 586px;
     height: auto;
-    font-family: "SaltedCaramel";
-    font-size: 50px;
-    text-align: center;
     background: linear-gradient(white, #ffff01);
-    line-height: 38px;
     top: 4.8rem;
     margin-bottom: 4.8rem;
     /*this compensates for moving banner 4.56rem down to give air to header*/
