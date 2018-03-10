@@ -374,10 +374,7 @@ justify-content: center;   /*this compensates for moving banner 4.56rem down to 
 
   .carousel-item {
     margin: 0 auto;
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 4px;
+    
   }
 
   .teaser-container {
