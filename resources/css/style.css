@@ -366,18 +366,18 @@ and (max-width: 586px) {
     width: 100%;
     height: auto;
     font-family: "SaltedCaramel";
-    text-align: center;
     background: linear-gradient(white, #ffff01);
-
     position: relative;
     top: 4.8rem;
+    margin-bottom: 4.84rem;
+    justify-content: center;
    /*this compensates for moving banner 4.56rem down to give air to header*/
   }
 
-.carousel {
-  min-width: 100%;
-  height: auto;
-}
+  .carousel
+  .slide {
+    min-width: 100%;
+  }
 
   .teaser-container {
     flex-direction: column;
