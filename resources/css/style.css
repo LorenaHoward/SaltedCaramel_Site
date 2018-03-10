@@ -369,12 +369,8 @@ and (max-width: 586px) {
     background: linear-gradient(white, #ffff01);
     top: 4.8rem;
     margin-bottom: 4.8rem;
-justify-content: center;   /*this compensates for moving banner 4.56rem down to give air to header*/
-  }
-
-  .carousel-item {
-    margin: 0 auto;
-    
+    justify-content: center;
+   /*this compensates for moving banner 4.56rem down to give air to header*/
   }
 
   .teaser-container {
