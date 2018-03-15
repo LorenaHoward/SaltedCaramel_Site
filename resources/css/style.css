@@ -571,7 +571,7 @@ and (max-width: 586px) {
   }
 
   .catalog-item {
-    max-width: 100%;
+    min-width: 100%;
     border-right: none;
     border-bottom: solid 1px white;
   }
