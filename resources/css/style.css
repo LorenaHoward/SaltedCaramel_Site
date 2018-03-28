@@ -17,7 +17,7 @@ html {
 
 body {
 font-family: 'Fira Sans', sans-serif;
-background: linear-gradient(white, #ffff01);
+background: linear-gradient(#ffff01, #e6e6e6);
 }
 
 .maincontainer {
@@ -73,20 +73,12 @@ nav ul li {
   font-family: "SaltedCaramel";
   font-size: 1.25rem;
   line-height: 1.3rem;
-  width: 8.9rem;
+  width: 8rem;
   height: 2.05rem;
   text-align: center;
-
 }
 
-.current-page {
-  display: block;
-  background-color: black;
-  color: #ffff01;
-  padding: 7px 0;
-}
-
-a:link {
+nav a:link {
   display: block;
   background-color: #ffff01;
   color: black;
@@ -94,17 +86,17 @@ a:link {
   padding: 6.5px 0;
 }
 
-a:hover {
+nav a:hover {
   background-color: white;
   color: black;
 }
 
-a:active {
+nav a:active {
   background-color: black;
   color: #ffff01;
 }
 
-a:visited {
+nav a:visited {
   color: black;
 }
 
@@ -112,10 +104,11 @@ a:visited {
   width: 100%;
   height: auto;
   font-family: "SaltedCaramel";
-  font-size: 100px;
+  line-height: 1.4;
+  font-size: 2rem;
   text-align: center;
   background: linear-gradient(white, #ffff01);
-  line-height: 276px;
+
   position: relative;
   top: 4.8rem;
   margin-bottom: 4.56rem;
@@ -145,6 +138,10 @@ a:visited {
   max-width: 50%;
 }
 
+.teaser-box a:link {
+  text-decoration: none;
+}
+
 .teaser-image {
   min-width: 50%;
   height: auto;
@@ -155,7 +152,6 @@ a:visited {
   max-width: 100%;
   height: auto;
   display: block;
-
 }
 
 .purple-blue {
@@ -333,7 +329,8 @@ h3 {
   font-weight: normal;
 }
 
-.cart a:link {
+.cart {
+  display: block;
   background-color: #e6e6e6;
   color: #01b8c8;
   font-weight: bold;
@@ -344,9 +341,13 @@ h3 {
   text-transform: uppercase;
 }
 
+.cart a:link {
+  text-decoration: none;
+}
+
 .cart a:hover {
   color: black;
-  background-color: none;
+background-color: white;
 }
 
 .cart a:active {
@@ -357,17 +358,195 @@ h3 {
   color: #01b8c8;
 }
 
-.more-info a:link {
+.more-info {
   color: #666666;
   padding-left: 8px;
   font-size: .8rem;
   letter-spacing: 4px;
   text-transform: uppercase;
   background-color: #e6e6e6;
-  line-height: 1.2rem;
+  line-height: 2rem;
+
+}
+.more-info a:link {
+  text-decoration: none;
+}
+
+.more-info a:hover {
+  background-color: white;
 }
 /*end of catalog classes*/
 
+
+
+/* individual item pages classes */
+.individual_page {
+  background-color: #e6e6e6;
+  position: relative;
+  top: 4.8rem;
+}
+
+.individual_item_container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/*testing spreads in candy frog comet 2*/
+.spread_sequence {
+  position: relative;
+  top: 143px;
+}
+
+.thumbnail_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #e6e6e6;
+  position: fixed;
+  z-index: 1;
+}
+
+.thumbnail_container img {
+  display: inline-block;
+  max-width: 113px;
+  max-height: 92px;
+  padding: 12px;
+}
+
+.thumbnail_container a:link {
+  background-color: #e6e6e6;
+}
+
+.thumbnail_container a:hover {
+  background-color: white;
+}
+
+.spread_container {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+  overflow: scroll;
+}
+
+.spread_container img {
+  height: 400px;
+  width: auto;
+  margin: 0 auto;
+}
+/*end of testing spreads in candy frog comet 2*/
+
+/* testing spreads in candy frog comet 3*/
+.spread_sequence_horizontal {
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  max-width: 1144px;
+  overflow: scroll;
+  align-items: center;
+  background: linear-gradient(white, #e6e6e6);
+}
+
+.spread_sequence_horizontal img {
+  height: 90%;
+  width: auto;
+}
+
+/*end of testing spreads in candy frog comet 3*/
+
+
+.slider_container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  width: 50%;
+  overflow: hidden;
+  background-color: #e6e6e6;
+}
+
+.slider_container a{
+  float:left;
+  margin:10px;
+  background-color: #e6e6e6;
+}
+
+.thumb {
+  height: 92px;
+  width: auto;
+}
+
+.big {
+  position: absolute;
+  max-width: 100%;
+  top: 600px;
+  left: 0px;
+
+  -webkit-transition: top 1s ease;
+  -moz-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  -ms-transition: top 1s ease;
+  transition: top 1s ease;
+  z-index: 1;
+}
+
+.featured {
+  position: absolute;
+  top: 120px;
+  z-index: 0;
+}
+
+  .image_sequence a:hover .thumb {
+    -webkit-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+  }
+
+  a:hover .big {
+    top: 120px;
+  }
+
+.item_specs {
+  display: block;
+  background-color: #e6e6e6;
+  max-width: 100%;
+  padding: 20px 143px;
+  line-height: 1.4rem;
+  column-count: 2;
+}
+
+.item_specs h1 {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.item_specs h4 {
+  color: #66669a;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+.item_specs p {
+  color: #666666;
+}
+
+.bibliography {
+  color: black;
+}
+
+.other_title_and_comments {
+  color: black;
+}
+.other_title_and_comments a:link {
+  background-color: inherit;
+}
+
+.other_title_and_comments a:hover {
+  background-color: white;
+}
+
+/* end of individual item pages classes */
 .pictographs {
   display: flex;
   width: 1144px;
@@ -384,6 +563,21 @@ h3 {
   height: auto;
   padding: 2rem;
   margin-bottom: 2rem;
+}
+
+.last_box {
+  margin: 0 auto;
+  max-width: 1144px;
+}
+
+.foot_style {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1144px;
+  margin: 0 auto;
+
 }
 
 footer {
@@ -419,7 +613,7 @@ footer a:hover {
 
 footer a:active {
   background-color: black;
-  color: #ffff01;
+  color: white;
 }
 
 footer a:visited {
@@ -434,6 +628,8 @@ footer a:visited {
 
 .a2a_default_style a {
   background-color: black;
+  position: relative;
+  top: .5rem;
 }
 
 footer .copyright {
@@ -443,6 +639,8 @@ footer .copyright {
   font-size: 1.25rem;
   line-height: 1.3rem;
   margin-right: 1rem;
+  position: relative;
+  top: .3rem;
 }
 
 /*media queries for tablet… if*/
@@ -453,6 +651,7 @@ and (max-width: 702px) {
   .catalog_container {
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: #b2b2b2;
   }
 
   .catalog-item {
@@ -460,7 +659,7 @@ and (max-width: 702px) {
   }
 
   .catalog-image-box {
-    background: #b2b2b2;
+    background-color: #b2b2b2;
     width: 100%;
     height: auto;
     margin: 0 auto;
