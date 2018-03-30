@@ -330,7 +330,7 @@ h3 {
 }
 
 .cart {
-  display: block;
+  display: inline-block;
   background-color: #e6e6e6;
   color: #01b8c8;
   font-weight: bold;
@@ -535,15 +535,24 @@ background-color: white;
   color: black;
 }
 
-.other_title_and_comments {
+.other_titles_and_comments {
   color: black;
 }
-.other_title_and_comments a:link {
-  background-color: inherit;
+.other_titles_and_comments a:link {
+  text-decoration: none;
+  color: #01b8c8;
 }
 
-.other_title_and_comments a:hover {
+.other_titles_and_comments a:hover {
   background-color: white;
+}
+
+.other_titles_and_comments a:visited {
+  color: #01b8c8;
+}
+
+.other_titles_and_comments a:active {
+  color: #01b8c8;
 }
 
 /* end of individual item pages classes */
@@ -720,12 +729,6 @@ and (max-width: 586px) {
     top: -1px;
   }
 
-  .current-page {
-    display: block;
-    background-color: black;
-    height: 1.85rem;
-  }
-
   .banner {
     display: none;
   }
@@ -818,7 +821,16 @@ and (max-width: 586px) {
     margin: 0 auto;
     padding-left: 1rem;
   }
+/* individual pages media queries */
+  .spread_sequence_horizontal {
+    height: 20rem;
+  }
 
+  .item_specs {
+      padding: 20px 10px;
+      column-count: 1;
+  }
+/* individual pages media queries */
   footer {
     max-width: 586px;
     height: 10rem;
