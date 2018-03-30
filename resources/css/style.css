@@ -680,6 +680,13 @@ and (max-width: 702px) {
     display: none;
   }
 
+  /* individual pages media queries */
+  .item_specs {
+    padding: 20px 86px;
+    column-count: 1;
+    }
+  /* individual pages media queries */
+
 }
 
 
@@ -831,6 +838,7 @@ and (max-width: 586px) {
       column-count: 1;
   }
 /* individual pages media queries */
+
   footer {
     max-width: 586px;
     height: 10rem;
