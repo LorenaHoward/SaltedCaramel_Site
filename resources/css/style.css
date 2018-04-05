@@ -323,7 +323,7 @@ h3 {
  font-weight: bold;
  color: #666666;
  font-size: .9rem;
- padding: .5rem 8px;
+ padding: .5rem 0;
  letter-spacing: 1px;
 }
 
@@ -557,6 +557,20 @@ footer .copyright {
   top: .3rem;
 }
 
+.apologies h1 {
+    width: 100%;
+    height: auto;
+    font-family: "SaltedCaramel";
+    line-height: 1.4;
+    font-size: 2rem;
+    text-align: left;
+    padding: 3rem;
+    padding-bottom: 5rem;
+    position: relative;
+    top: 4.8rem;
+    margin-bottom: 4.56rem;
+}
+
 /*media queries for tablet… if*/
 @media only screen
 and (min-width: 586px)
@@ -748,7 +762,7 @@ and (max-width: 586px) {
   }
 /* individual pages media queries */
   .spread_sequence_horizontal {
-    height: 20rem;
+    height: 15rem;
   }
 
   .item_specs {
@@ -779,7 +793,7 @@ and (max-width: 586px) {
   }
 
 .a2a_default_style {
-  min-width: 40%;
+  min-width: 60%;
 }
 
 }
